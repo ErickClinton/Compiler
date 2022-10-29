@@ -1,0 +1,36 @@
+Main ( 
+    a_parenteses([(]:A_PARENTESES)  
+    IsParams ()  
+    f_parenteses([)]:F_PARENTESES)  
+    a_chaves([{]:A_CHAVES)  
+    block ( 
+        VariableDeclaration ( 
+            int([int]:INT)  
+            id([a]:ID)  
+            atribuicao([:=]:ATRIBUICAO)  
+            exp ( 
+                termo ( 
+                    fator ( 
+                        int_value([4]:INT_VALUE) 
+                    )  
+                    multiplicacao([*]:MULTIPLICACAO)  
+                    termo ( 
+                        fator ( 
+                            int_value([2]:INT_VALUE) 
+                            ) 
+                        ) 
+                    ) 
+                    adicao([+]:ADICAO)  
+                    exp ( 
+                        termo ( 
+                            fator ( 
+                                int_value([2]:INT_VALUE) 
+                                ) 
+                            ) 
+                        ) 
+                    )  
+                eoi([;]:EOI) 
+            ) 
+        )  
+    f_chaves([}]:F_CHAVES) 
+) 

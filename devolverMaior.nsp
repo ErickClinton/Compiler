@@ -1,0 +1,16 @@
+func devolverMaior(a: int, b: int): int{
+    int maior := 4;
+    if(a > b){
+        maior := a;
+    }else{
+        maior := b;
+    }
+
+    show(maior);
+
+    ->maior;
+}
+
+main(){
+
+}
